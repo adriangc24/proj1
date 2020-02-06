@@ -1,0 +1,4 @@
+#Tue Feb 04 17:41:35 CET 2020
+base.0=C\:\\Users\\adri\\proj1\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
