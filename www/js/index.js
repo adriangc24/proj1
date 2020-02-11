@@ -21,9 +21,17 @@
     //alert("hola mundo");
     var text = prompt("Nova tasca: ")
 
-    var nou_elem = $('<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r">'+text+'</a></li>')
+    var nou_elem = $('<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r">'+text+"<button id='botonBorrar'>Esborra</button></a></li>");
+
+    $("button",nou_elem).click(esborra);
     $("#lista").append(nou_elem);
  }
+
+ function esborra (event){
+    event.target.closest('li').remove();
+    //$(event.target).parent().parent().remove();
+ }
+
 var app = {
     // Application Constructor
     initialize: function() {
